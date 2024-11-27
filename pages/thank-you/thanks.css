@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: "Mulish", "sans-serif";
+  src: url(fonts/mulis/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url(../../fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-light";
+  src: url(../../fonts/ubuntu/Ubuntu-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+@media (max-width: 1441px) {
+  .container {
+    width: 85%;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.hero {
+  background-image: url("../../img/thank-you-page.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+}
+.hero .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0px;
+}
+.hero .nav #logo-phone {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hero .nav #logo {
+    display: none;
+  }
+  .hero .nav #logo-phone {
+    display: block;
+  }
+}
+.hero .nav .btn-nav {
+  background: rgba(38, 111, 174, 0.0901960784);
+  border-style: none;
+  border-radius: 50px;
+  padding: 15px 45px;
+  color: #266FAE;
+  font-family: "Mulish", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.hero .nav .btn-nav:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+@media (max-width: 768px) {
+  .hero .nav .btn-nav {
+    font-size: 14px;
+    padding: 7.5px 22.5px;
+  }
+}
+@media (max-width: 550px) {
+  .hero .nav .btn-nav {
+    font-size: 14px;
+    padding: 7.5px 22.5px;
+    background-color: rgba(38, 111, 174, 0.0509803922);
+    color: #266FAE;
+  }
+}
+@media (max-width: 425px) {
+  .hero .nav .btn-nav {
+    font-size: 12px;
+    padding: 7.5px 7.5px;
+  }
+}
+.hero header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  text-align: center;
+}
+.hero header .text {
+  background: #FFFFFF;
+  box-shadow: 0px 30px 150px -10px rgba(0, 0, 0, 0.1);
+  width: 730px;
+  height: 450px;
+  padding: 0px 15px;
+}
+.hero header .text h4 {
+  margin-top: 50px;
+  font-family: "Mulish", "sans-serif";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: #266FAE;
+}
+.hero header .text h1 {
+  font-family: "Ubuntu-light", "sans-serif";
+  font-size: 48px;
+  line-height: 60px;
+  color: #061f3f;
+  letter-spacing: 1px;
+}
+.hero header .text h1 span {
+  font-family: "Ubuntu-bold", "sans-serif";
+  font-size: 40px;
+}
+.hero header .text p {
+  margin: 20px 0px 10px 0px;
+  font-family: "Mulish", "sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #726E6E;
+}
+.hero header .text h3 {
+  font-family: "Mulish", "sans-serif";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #17262F;
+}
+.hero header .text button {
+  background: linear-gradient(90deg, #5FB2DA 0%, #52CD6D 100%);
+  margin: 30px auto 50px auto;
+  border-style: none;
+  border-radius: 50px;
+  padding: 15px 45px;
+  color: white;
+  font-family: "Mulish", "sans-serif";
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+.hero header .text button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+@media (max-width: 550px) {
+  .hero header .text button {
+    font-size: 14px;
+    padding: 7.5px 22.5px;
+  }
+}
+@media (max-width: 425px) {
+  .hero header .text button {
+    font-size: 12px;
+    padding: 7.5px 7.5px;
+  }
+}
+@media (max-width: 768px) {
+  .hero header {
+    margin-top: 13%;
+  }
+  .hero header .text {
+    flex: 0 0 80%;
+    height: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .hero header .text h1 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .hero header .text h1 span {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .hero header .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .hero header .text h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 550px) {
+  .hero {
+    height: 700px;
+  }
+}
+
+.social {
+  margin: 75px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social .icons {
+  text-align: center;
+}
+.social .icons a {
+  margin-left: 35px;
+}
+@media (max-width: 395px) {
+  .social .icons a {
+    margin-left: 35px;
+  }
+}
+.social .icons a img {
+  transition: 0.5s ease-in-out;
+}
+.social .icons a img:hover {
+  transform: rotate(360deg);
+  transition: 0.5s ease-in-out;
+}
+@media (max-width: 761px) {
+  .social {
+    flex-direction: column;
+  }
+  .social .icons {
+    margin-top: 35px;
+  }
+  .social a {
+    margin: 0px 15px !important;
+  }
+}
+@media (max-width: 375px) {
+  .social .logo {
+    width: 100%;
+  }
+  .social .logo a {
+    display: block;
+  }
+  .social .logo a img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 372px) {
+  .social a {
+    margin: 0px 5px !important;
+  }
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+}
+footer hr {
+  margin-bottom: 16px;
+  border: 1px solid #E5E5E5;
+}
+footer p {
+  font-family: "Mulish", "sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  margin-bottom: 20px;
+  color: #726E6E;
+}/*# sourceMappingURL=thanks.css.map */

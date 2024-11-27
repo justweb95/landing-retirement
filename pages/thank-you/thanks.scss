@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+@font-face {
+  font-family: 'Mulish', 'sans-serif';
+  src: url(fonts/mulis/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu-bold';
+  src: url(../../fonts/ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu-light';
+  src: url(../../fonts/ubuntu/Ubuntu-Light.ttf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 75%;
+  margin: auto;
+  @media (max-width: 1441px) {
+    width: 85%;
+  }
+  @media (max-width: 550px) {
+    width: 90%;
+  }
+}
+
+////////////////////////////////////////Hero Section////////////////////////////////////
+.hero{
+  background-image: url('../../img/thank-you-page.png');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 800px;
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0px;
+    #logo-phone{
+      display: none;
+    }
+    @media (max-width: 768px) {
+      #logo{
+        display: none;
+      }
+      #logo-phone{
+        display: block;
+      }
+    }
+    .btn-nav{
+      background: #266FAE17;
+      border-style: none;
+      border-radius: 50px;
+      padding: 15px 45px;
+      color: #266FAE;
+      font-family: 'Mulish', 'sans-serif';
+      font-weight: 700;
+      font-size: 18px;
+      transition: .3s ease;
+      &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: .3s ease;
+      }
+      @media (max-width: 768px) {
+        font-size: 14px;
+        padding: 7.5px 22.5px;
+      }
+      @media (max-width: 550px) {
+        font-size: 14px;
+        padding: 7.5px 22.5px;
+        background-color: #266FAE0D;
+        color: #266FAE;
+      }
+      @media (max-width: 425px) {
+        font-size: 12px;
+        padding: 7.5px 7.5px;
+      }
+    }
+  }
+  header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    text-align: center;
+    .text{
+      background: #FFFFFF;
+      box-shadow: 0px 30px 150px -10px rgba(0, 0, 0, 0.1);
+      width: 730px;
+      height: 450px;
+      padding: 0px 15px;
+      h4{
+        margin-top: 50px;
+        font-family: 'Mulish', 'sans-serif';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 2px;
+        color: #266FAE;
+      }
+      h1{
+        font-family: 'Ubuntu-light', 'sans-serif';
+        font-size: 48px;
+        line-height: 60px;
+        color: #061f3f;
+        letter-spacing: 1px;
+        span{
+          font-family: 'Ubuntu-bold', 'sans-serif';
+          font-size: 40px;
+        }
+      }
+      p{
+        margin: 20px 0px 10px 0px;
+        font-family: 'Mulish','sans-serif';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        color: #726E6E;
+      }
+      h3{
+        font-family: 'Mulish','sans-serif';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        color: #17262F;
+      }
+      button{
+        background: linear-gradient(90deg, #5FB2DA 0%, #52CD6D 100%);
+        margin: 30px auto 50px auto;
+        border-style: none;
+        border-radius: 50px;
+        padding: 15px 45px;
+        color: white;
+        font-family: 'Mulish', 'sans-serif';
+        font-weight: 700;
+        font-size: 18px;
+        transition: .3s ease;
+        &:hover{
+          cursor: pointer;
+          transform: scale(1.1);
+          transition: .3s ease;
+        }
+
+        @media (max-width: 550px) {
+          font-size: 14px;
+          padding: 7.5px 22.5px;
+        }
+        @media (max-width: 425px) {
+          font-size: 12px;
+          padding: 7.5px 7.5px;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      margin-top: 13%;
+      .text{
+        flex: 0 0 80%;
+        height: 100%;
+      }
+    }
+    @media (max-width: 550px) {
+      .text{
+        h1{
+          font-size: 18px;
+          line-height: 30px;
+          span{
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        p{
+          font-size: 14px;
+          line-height: 20px;
+        }
+        h3{
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    height: 700px;
+  }
+}
+
+//////////////////////////////////////////Social Style///////////////////////////////////////
+.social{
+  margin: 75px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .icons{
+    text-align: center;
+    a{
+      margin-left: 35px;
+      @media (max-width: 395px) {
+        margin-left: 35px;
+      }
+      img{
+        transition: .5s ease-in-out;
+        &:hover{
+          transform: rotate(360deg);
+          transition: .5s ease-in-out;
+        }
+      }
+    }
+  }
+  @media (max-width: 761px) {
+    flex-direction: column;
+    .icons{
+      margin-top: 35px;
+    }
+    a{
+      margin: 0px 15px !important;
+    }
+  }
+  @media (max-width: 375px) {
+    .logo{
+      width: 100%;
+      a{
+        display: block;
+        img{
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 372px) {
+    a{
+      margin: 0px 5px !important;
+    }
+  }
+}
+
+//////////////////////////////////////Footer Style///////////////////////////////////////
+footer{
+  margin: auto;
+  text-align: center;
+  hr{
+    margin-bottom: 16px;
+    border: 1px solid #E5E5E5;
+  }
+  p{
+    font-family: 'Mulish', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    margin-bottom: 20px;
+    color: #726E6E;
+  }
+}
+
