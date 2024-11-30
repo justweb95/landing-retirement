@@ -124,10 +124,12 @@ html{scroll-behavior:smooth}
           display: none;
         }
         #logo-phone{
+          max-width: 160px;
           display: block;
         }
       }
       .btn-nav{
+        text-decoration: none;
         @include button($background: #ABD9F1);
         @media (max-width: 1024px) {
           background-color: #266FAE0D;
@@ -348,6 +350,7 @@ html{scroll-behavior:smooth}
     height: 800px;
     width: 100%;
     .video{
+      min-width: 100vw;
       video{
         width: 100%;
         height: 100%;
@@ -550,7 +553,9 @@ html{scroll-behavior:smooth}
           }
         }
       }
-      button{
+      .btn{
+        text-decoration: none;
+        display: inline-block;
         margin: 35px 0px 50px 50px;
       }
       @media (max-width: 768px) {

@@ -31,7 +31,7 @@
 
 ////////////////////////////////////////Hero Section////////////////////////////////////
 .hero{
-  background-image: url('../../img/thank-you-page.png');
+  background-image: url('../../img/assist-you.png');
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -49,8 +49,12 @@
         display: none;
       }
       #logo-phone{
+        max-width: 160px;
         display: block;
       }
+    }
+    @media (max-width: 425px) {
+      padding: 20px 0px;
     }
     .btn-nav{
       background: #266FAE17;
@@ -132,9 +136,11 @@
         letter-spacing: 1px;
         color: #17262F;
       }
-      button{
+      a{
+        text-decoration: none;
         background: linear-gradient(90deg, #5FB2DA 0%, #52CD6D 100%);
-        margin: 30px auto 50px auto;
+        display: inline-block;
+        margin: 30px auto 40px auto;
         border-style: none;
         border-radius: 50px;
         padding: 15px 45px;
@@ -147,15 +153,6 @@
           cursor: pointer;
           transform: scale(1.1);
           transition: .3s ease;
-        }
-
-        @media (max-width: 550px) {
-          font-size: 14px;
-          padding: 7.5px 22.5px;
-        }
-        @media (max-width: 425px) {
-          font-size: 12px;
-          padding: 7.5px 7.5px;
         }
       }
     }
@@ -190,6 +187,9 @@
   @media (max-width: 550px) {
     height: 700px;
   }
+  @media (max-width: 425px) {
+    height: 600px;
+  }
 }
 
 //////////////////////////////////////////Social Style///////////////////////////////////////
@@ -222,6 +222,9 @@
     a{
       margin: 0px 15px !important;
     }
+  }
+  @media (max-width: 425px) {
+    margin: 50px auto;
   }
   @media (max-width: 375px) {
     .logo{

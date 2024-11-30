@@ -116,10 +116,12 @@ html {
     display: none;
   }
   .hero .nav #logo-phone {
+    max-width: 160px;
     display: block;
   }
 }
 .hero .nav .btn-nav {
+  text-decoration: none;
   background: #ABD9F1;
   border-style: none;
   border-radius: 50px;
@@ -399,6 +401,9 @@ html {
   height: 800px;
   width: 100%;
 }
+.success .video {
+  min-width: 100vw;
+}
 .success .video video {
   width: 100%;
   height: 100%;
@@ -622,7 +627,9 @@ html {
   line-height: 25px;
   padding-right: 50px;
 }
-.assist div:last-child button {
+.assist div:last-child .btn {
+  text-decoration: none;
+  display: inline-block;
   margin: 35px 0px 50px 50px;
 }
 @media (max-width: 768px) {

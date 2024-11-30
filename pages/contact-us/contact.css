@@ -78,6 +78,7 @@
   }
 }
 .hero .nav .btn-nav {
+  text-decoration: none;
   background: rgba(38, 111, 174, 0.0901960784);
   border-style: none;
   border-radius: 50px;

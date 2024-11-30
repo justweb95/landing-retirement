@@ -33,7 +33,7 @@
 }
 
 .hero {
-  background-image: url("../../img/thank-you-page.png");
+  background-image: url("../../img/assist-you.png");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -53,7 +53,13 @@
     display: none;
   }
   .hero .nav #logo-phone {
+    max-width: 160px;
     display: block;
+  }
+}
+@media (max-width: 425px) {
+  .hero .nav {
+    padding: 20px 0px;
   }
 }
 .hero .nav .btn-nav {
@@ -143,9 +149,11 @@
   letter-spacing: 1px;
   color: #17262F;
 }
-.hero header .text button {
+.hero header .text a {
+  text-decoration: none;
   background: linear-gradient(90deg, #5FB2DA 0%, #52CD6D 100%);
-  margin: 30px auto 50px auto;
+  display: inline-block;
+  margin: 30px auto 40px auto;
   border-style: none;
   border-radius: 50px;
   padding: 15px 45px;
@@ -155,22 +163,10 @@
   font-size: 18px;
   transition: 0.3s ease;
 }
-.hero header .text button:hover {
+.hero header .text a:hover {
   cursor: pointer;
   transform: scale(1.1);
   transition: 0.3s ease;
-}
-@media (max-width: 550px) {
-  .hero header .text button {
-    font-size: 14px;
-    padding: 7.5px 22.5px;
-  }
-}
-@media (max-width: 425px) {
-  .hero header .text button {
-    font-size: 12px;
-    padding: 7.5px 7.5px;
-  }
 }
 @media (max-width: 768px) {
   .hero header {
@@ -202,6 +198,11 @@
 @media (max-width: 550px) {
   .hero {
     height: 700px;
+  }
+}
+@media (max-width: 425px) {
+  .hero {
+    height: 600px;
   }
 }
 
@@ -238,6 +239,11 @@
   }
   .social a {
     margin: 0px 15px !important;
+  }
+}
+@media (max-width: 425px) {
+  .social {
+    margin: 50px auto;
   }
 }
 @media (max-width: 375px) {
